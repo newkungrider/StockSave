@@ -13,7 +13,7 @@ def tick():
     curtime = datetime.now().time()
     ftime = curtime.strftime('%H:%M:%S')
     lb_clock.config(text=ftime)
-    lb_clock.after(1000, tick)      #ให้เรียกฟังก์ชันตัวมันเองทุก 1 วินาที
+    lb_clock.after(1000, tick)       #ให้เรียกฟังก์ชันตัวมันเองทุก 1 วินาที
 
 tick()          #เรียกฟังก์ชันขึ้นมาทำงานครั้งแรก
 mainloop()
